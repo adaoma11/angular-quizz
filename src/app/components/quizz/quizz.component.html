@@ -1,0 +1,21 @@
+<div class="quizz-container">
+
+    <div class="quizz-title">
+        <h2>{{ title }}</h2>
+    </div>
+
+    <div class="quizz-questions" *ngIf="!finished">
+        <h3>{{ selectedQuestion.question }}</h3>
+    </div>
+
+    <div class="quizz-options" *ngIf="!finished">
+        <button class="optionBtn" *ngFor="let opt of selectedQuestion.options"
+        (click)="nextStep(opt.alias)">{{ opt.name }}</button>
+    </div>
+
+    <div *ngIf="finished" class="quizz-result">
+        <h3>Resultado:</h3>
+        <p>{{ result }}</p>
+    </div>
+
+</div>

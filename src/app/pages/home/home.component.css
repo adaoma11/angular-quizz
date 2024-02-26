@@ -1,0 +1,10 @@
+.home-container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    margin: 0 auto 2rem auto;
+    text-align: center;
+}
